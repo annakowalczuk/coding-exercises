@@ -6,10 +6,10 @@ For example, solution(20) should return [5, 2, 1]
 
 const solution = (number) => {
   const checkMultiples = (operand) =>
-  Math.floor((number % operand === 0) ? ((number - 1) / operand) : (number / operand));
+  Math.floor((number - 1) / operand);
   let a = checkMultiples(3);
   let b = checkMultiples(5);
   let c = checkMultiples(15);
-  return [a >= 5 ? a - c : a, b >= 3 ? b - c : b, c];
+  return [a - c, b - c, c];
 }
 console.log(solution(20));
