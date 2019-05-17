@@ -1,0 +1,23 @@
+{
+  "name": "coding-exercises",
+  "version": "1.0.0",
+  "description": "JavaScript Coding exercises",
+  "main": "anagram.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/annakowalczuk/coding-exercises.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/annakowalczuk/coding-exercises/issues"
+  },
+  "homepage": "https://github.com/annakowalczuk/coding-exercises#readme",
+  "devDependencies": {
+    "mocha": "^6.1.4"
+  }
+}
