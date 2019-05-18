@@ -10,5 +10,4 @@ const anagram = (firstStr, secondStr) => {
   return transform(firstStr) === transform(secondStr);
 };
 
-console.log(anagram('finder', 'Friend'));
-console.log(anagram('hello', 'bye'));
+module.exports = anagram;

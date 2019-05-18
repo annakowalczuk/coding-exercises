@@ -3,13 +3,13 @@
 // write a function that returns the nth entry in the Fibonacci sequence, where n is a number you pass in as argument to the function.
 // fibonacci(3)  // --> 2
 
-const fibonacci = num => {
+const fibonacciRec = num => {
   // if num is either 0 or 1 return num
   if(num < 2) {
     return num
   }
   // recursion here
-  return fibonacci(num - 1) + fibonacci(num - 2)
+  return fibonacciRec(num - 1) + fibonacciRec(num - 2)
 };
 
 const fibonacciIter = num => {
@@ -30,7 +30,5 @@ const fibonacciIter = num => {
   }
 }
 
-console.log(fibonacci(7));
-console.log(fibonacciIter(7));
-console.log(fibonacci(3));
-console.log(fibonacciIter(3));
+module.exports.fibonacciRec = fibonacciRec;
+module.exports.fibonacciIter = fibonacciIter;
